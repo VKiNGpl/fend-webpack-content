@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry: './src/index.js',
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
@@ -19,7 +19,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/client/views/index.html",
+            template: "./src/views/index.html",
             filename: "./index.html",
         }),
         new CleanWebpackPlugin({
